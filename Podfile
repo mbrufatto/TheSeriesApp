@@ -7,6 +7,8 @@ target 'TheSeriesApp' do
 
   # Pods for TheSeriesApp
 
+  pod 'Kingfisher', '~> 5.0'
+
   target 'TheSeriesAppTests' do
     inherit! :search_paths
     # Pods for testing
