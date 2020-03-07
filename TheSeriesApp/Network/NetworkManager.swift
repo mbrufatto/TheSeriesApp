@@ -12,6 +12,7 @@ struct Resource<T> {
     let url: String
     let page: Int
     let parse: (Data) -> T?
+    let error: (Error) -> T?
 }
 
 
@@ -37,7 +38,7 @@ final class NetworkManager {
                     completion(resource.parse(data))
                 }
             } else {
-                completion(resource.parse((error?.localizedDescription.data(using: .utf8))!))
+                completion(resource.error(error!))
             }
         }.resume()
     }
