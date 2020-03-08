@@ -15,6 +15,12 @@
 		615CDA8824133585007CF669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615CDA8624133585007CF669 /* LaunchScreen.storyboard */; };
 		615CDA9324133586007CF669 /* TheSeriesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDA9224133586007CF669 /* TheSeriesAppTests.swift */; };
 		615CDAA324134078007CF669 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAA224134078007CF669 /* NetworkManager.swift */; };
+		615CDAAB2414190C007CF669 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAAA2414190C007CF669 /* TvShow.swift */; };
+		615CDAAD241423C6007CF669 /* TvShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAAC241423C6007CF669 /* TvShowViewModel.swift */; };
+		615CDAAF2414B04F007CF669 /* ListTvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAAE2414B04F007CF669 /* ListTvShowViewController.swift */; };
+		615CDAB12414B469007CF669 /* TvShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB02414B469007CF669 /* TvShowCell.swift */; };
+		615CDAB4241549AC007CF669 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB3241549AC007CF669 /* ApiConfig.swift */; };
+		615CDAB724155B1B007CF669 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB624155B1A007CF669 /* StringExtension.swift */; };
 		9759D89CFC9D885B34A4436D /* Pods_TheSeriesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A008BE49B6911B64B9CF75 /* Pods_TheSeriesApp.framework */; };
 		AE46A6A36EA9E49A9F542544 /* Pods_TheSeriesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BE6468228C938B31E3AAD6 /* Pods_TheSeriesAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +50,12 @@
 		615CDA9224133586007CF669 /* TheSeriesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSeriesAppTests.swift; sourceTree = "<group>"; };
 		615CDA9424133586007CF669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		615CDAA224134078007CF669 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		615CDAAA2414190C007CF669 /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
+		615CDAAC241423C6007CF669 /* TvShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewModel.swift; sourceTree = "<group>"; };
+		615CDAAE2414B04F007CF669 /* ListTvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTvShowViewController.swift; sourceTree = "<group>"; };
+		615CDAB02414B469007CF669 /* TvShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCell.swift; sourceTree = "<group>"; };
+		615CDAB3241549AC007CF669 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		615CDAB624155B1A007CF669 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		75A008BE49B6911B64B9CF75 /* Pods_TheSeriesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeriesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41F7C8062C176AFE7EAD2AB /* Pods-TheSeriesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeriesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheSeriesAppTests/Pods-TheSeriesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5BE6468228C938B31E3AAD6 /* Pods_TheSeriesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeriesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +114,12 @@
 		615CDA7A24133584007CF669 /* TheSeriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				615CDAB52415574C007CF669 /* Extension */,
+				615CDAB224154998007CF669 /* Config */,
 				615CDA9D24133C71007CF669 /* Network */,
-				615CDA7B24133584007CF669 /* AppDelegate.swift */,
+				615CDAA424141860007CF669 /* Scenes */,
 				615CDA7D24133584007CF669 /* SceneDelegate.swift */,
+				615CDA7B24133584007CF669 /* AppDelegate.swift */,
 				615CDA7F24133584007CF669 /* ViewController.swift */,
 				615CDA8124133584007CF669 /* Main.storyboard */,
 				615CDA8424133585007CF669 /* Assets.xcassets */,
@@ -129,6 +144,73 @@
 				615CDAA224134078007CF669 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		615CDAA424141860007CF669 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAA52414188E007CF669 /* ListTvShow */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		615CDAA52414188E007CF669 /* ListTvShow */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAA9241418E8007CF669 /* Controllers */,
+				615CDAA8241418DD007CF669 /* ViewModel */,
+				615CDAA7241418D4007CF669 /* View */,
+				615CDAA6241418CB007CF669 /* Model */,
+			);
+			path = ListTvShow;
+			sourceTree = "<group>";
+		};
+		615CDAA6241418CB007CF669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAAA2414190C007CF669 /* TvShow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		615CDAA7241418D4007CF669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAB02414B469007CF669 /* TvShowCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		615CDAA8241418DD007CF669 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAAC241423C6007CF669 /* TvShowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		615CDAA9241418E8007CF669 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAAE2414B04F007CF669 /* ListTvShowViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		615CDAB224154998007CF669 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAB3241549AC007CF669 /* ApiConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		615CDAB52415574C007CF669 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				615CDAB624155B1A007CF669 /* StringExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		93EA9AE5125B063C51EBA59C /* Pods */ = {
@@ -311,9 +393,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				615CDAA324134078007CF669 /* NetworkManager.swift in Sources */,
+				615CDAAF2414B04F007CF669 /* ListTvShowViewController.swift in Sources */,
+				615CDAB724155B1B007CF669 /* StringExtension.swift in Sources */,
 				615CDA8024133584007CF669 /* ViewController.swift in Sources */,
+				615CDAAB2414190C007CF669 /* TvShow.swift in Sources */,
+				615CDAAD241423C6007CF669 /* TvShowViewModel.swift in Sources */,
 				615CDA7C24133584007CF669 /* AppDelegate.swift in Sources */,
+				615CDAB12414B469007CF669 /* TvShowCell.swift in Sources */,
 				615CDA7E24133584007CF669 /* SceneDelegate.swift in Sources */,
+				615CDAB4241549AC007CF669 /* ApiConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,20 +12,19 @@ struct Resource<T> {
     let url: String
     let page: Int
     let parse: (Data) -> T?
-    let error: (Error) -> T?
-}
-
-
-fileprivate struct APIConfig {
-    static let apiKey = "6f4768c52238557ac6372ea46aefbb71"
 }
 
 final class NetworkManager {
     
-    func load<T>(resource: Resource<T>, completion: @escaping(T?) -> Void) {
+    func load<T>(resource: Resource<T>, completion: @escaping(T?) -> ()) {
         
-        let tvShowsUrl = URLComponents(string: resource.url)!
+        var tvShowsUrl = URLComponents(string: resource.url)!
         var request = URLRequest(url: tvShowsUrl.url!)
+        tvShowsUrl.queryItems?.append(URLQueryItem(name: "api_key", value: "\(APIConfig.apiKey)"))
+        tvShowsUrl.queryItems?.append(URLQueryItem(name: "page", value: "\(resource.page)"))
+        
+        let finalURL = tvShowsUrl.url
+        request = URLRequest(url: finalURL!)
         
         request.httpMethod = "GET"
         
@@ -38,8 +37,9 @@ final class NetworkManager {
                     completion(resource.parse(data))
                 }
             } else {
-                completion(resource.error(error!))
+                completion(nil)
             }
         }.resume()
     }
 }
+
