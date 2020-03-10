@@ -17,6 +17,8 @@ class TvShowCell: UITableViewCell {
     @IBOutlet weak var voteAverage: UILabel!
     @IBOutlet weak var firstAirDate: UILabel!
     
+    @IBOutlet weak var backgroundVoteAverage: UIView!
+    
     fileprivate var tvShowViewModel = TvShowViewModel()
     
     func configureCell(_ tvShow: TvShow) {
@@ -34,6 +36,8 @@ class TvShowCell: UITableViewCell {
         poster.layer.borderWidth = 1.5
         poster.layer.borderColor = UIColor.white.cgColor
         poster.layer.cornerRadius = 5
+        
+        backgroundVoteAverage.layer.cornerRadius = 10
         
         let url = URL(string: APIConfig.baseImageUrl + posterPath)
         self.poster.kf.setImage(with: url)

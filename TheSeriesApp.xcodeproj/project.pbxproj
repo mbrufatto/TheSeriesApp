@@ -21,6 +21,10 @@
 		615CDAB12414B469007CF669 /* TvShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB02414B469007CF669 /* TvShowCell.swift */; };
 		615CDAB4241549AC007CF669 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB3241549AC007CF669 /* ApiConfig.swift */; };
 		615CDAB724155B1B007CF669 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615CDAB624155B1A007CF669 /* StringExtension.swift */; };
+		617913182416AE3600DE93FB /* GenresAndCreators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617913172416AE3600DE93FB /* GenresAndCreators.swift */; };
+		6179131B2416B14A00DE93FB /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179131A2416B14A00DE93FB /* Dynamic.swift */; };
+		6179131D2416B1DC00DE93FB /* TvShowDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179131C2416B1DC00DE93FB /* TvShowDetailViewModel.swift */; };
+		617E985E241678B100EF2C8B /* TvShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617E985D241678B100EF2C8B /* TvShowDetailViewController.swift */; };
 		9759D89CFC9D885B34A4436D /* Pods_TheSeriesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A008BE49B6911B64B9CF75 /* Pods_TheSeriesApp.framework */; };
 		AE46A6A36EA9E49A9F542544 /* Pods_TheSeriesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BE6468228C938B31E3AAD6 /* Pods_TheSeriesAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +60,10 @@
 		615CDAB02414B469007CF669 /* TvShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCell.swift; sourceTree = "<group>"; };
 		615CDAB3241549AC007CF669 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 		615CDAB624155B1A007CF669 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		617913172416AE3600DE93FB /* GenresAndCreators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresAndCreators.swift; sourceTree = "<group>"; };
+		6179131A2416B14A00DE93FB /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		6179131C2416B1DC00DE93FB /* TvShowDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailViewModel.swift; sourceTree = "<group>"; };
+		617E985D241678B100EF2C8B /* TvShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailViewController.swift; sourceTree = "<group>"; };
 		75A008BE49B6911B64B9CF75 /* Pods_TheSeriesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeriesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41F7C8062C176AFE7EAD2AB /* Pods-TheSeriesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeriesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheSeriesAppTests/Pods-TheSeriesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5BE6468228C938B31E3AAD6 /* Pods_TheSeriesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeriesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +122,7 @@
 		615CDA7A24133584007CF669 /* TheSeriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				617913192416B13900DE93FB /* Commons */,
 				615CDAB52415574C007CF669 /* Extension */,
 				615CDAB224154998007CF669 /* Config */,
 				615CDA9D24133C71007CF669 /* Network */,
@@ -149,6 +158,7 @@
 		615CDAA424141860007CF669 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				615CDAB82415FB64007CF669 /* TvShowDetail */,
 				615CDAA52414188E007CF669 /* ListTvShow */,
 			);
 			path = Scenes;
@@ -211,6 +221,56 @@
 				615CDAB624155B1A007CF669 /* StringExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		615CDAB82415FB64007CF669 /* TvShowDetail */ = {
+			isa = PBXGroup;
+			children = (
+				615CDABC2416014D007CF669 /* View */,
+				615CDABB24160141007CF669 /* Model */,
+				615CDABA24160133007CF669 /* ViewModel */,
+				615CDAB924160126007CF669 /* Controllers */,
+			);
+			path = TvShowDetail;
+			sourceTree = "<group>";
+		};
+		615CDAB924160126007CF669 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				617E985D241678B100EF2C8B /* TvShowDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		615CDABA24160133007CF669 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6179131C2416B1DC00DE93FB /* TvShowDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		615CDABB24160141007CF669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				617913172416AE3600DE93FB /* GenresAndCreators.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		615CDABC2416014D007CF669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		617913192416B13900DE93FB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				6179131A2416B14A00DE93FB /* Dynamic.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		93EA9AE5125B063C51EBA59C /* Pods */ = {
@@ -392,14 +452,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6179131B2416B14A00DE93FB /* Dynamic.swift in Sources */,
 				615CDAA324134078007CF669 /* NetworkManager.swift in Sources */,
 				615CDAAF2414B04F007CF669 /* ListTvShowViewController.swift in Sources */,
 				615CDAB724155B1B007CF669 /* StringExtension.swift in Sources */,
+				617913182416AE3600DE93FB /* GenresAndCreators.swift in Sources */,
 				615CDA8024133584007CF669 /* ViewController.swift in Sources */,
 				615CDAAB2414190C007CF669 /* TvShow.swift in Sources */,
 				615CDAAD241423C6007CF669 /* TvShowViewModel.swift in Sources */,
 				615CDA7C24133584007CF669 /* AppDelegate.swift in Sources */,
+				6179131D2416B1DC00DE93FB /* TvShowDetailViewModel.swift in Sources */,
 				615CDAB12414B469007CF669 /* TvShowCell.swift in Sources */,
+				617E985E241678B100EF2C8B /* TvShowDetailViewController.swift in Sources */,
 				615CDA7E24133584007CF669 /* SceneDelegate.swift in Sources */,
 				615CDAB4241549AC007CF669 /* ApiConfig.swift in Sources */,
 			);
@@ -565,6 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6NR5MWZFA;
 				INFOPLIST_FILE = TheSeriesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,7 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.marvelapi.TheSeriesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -584,6 +649,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6NR5MWZFA;
 				INFOPLIST_FILE = TheSeriesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +657,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.marvelapi.TheSeriesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

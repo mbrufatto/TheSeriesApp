@@ -24,7 +24,7 @@ class TvShowViewModel {
     }
     
     func loadTvShows(page: Int, completion: @escaping([TvShow]) -> ()) {
-        let tvShowUrl = APIConfig.baseUrl + "?api_key=\(APIConfig.apiKey)&language=en-US&page=\(page)"
+        let tvShowUrl = APIConfig.baseUrl + "/popular?api_key=\(APIConfig.apiKey)&language=en-US&page=\(page)"
         let tvShowResource = Resource<TvShowBase>(url: tvShowUrl, page: page) { data in
             let tvShowData = try? JSONDecoder().decode(TvShowBase.self, from: data)
             return tvShowData
