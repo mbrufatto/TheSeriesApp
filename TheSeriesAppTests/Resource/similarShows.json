@@ -1,0 +1,422 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "original_name": "Doctor Who",
+      "id": 57243,
+      "name": "Doctor Who",
+      "vote_count": 1639,
+      "vote_average": 7.0,
+      "first_air_date": "2005-03-26",
+      "poster_path": "/cDDb7WA2i7cENhkEEjXEDrXGyNL.jpg",
+      "genre_ids": [
+        18,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/nfH8SZJVOxcBlFaqqtoqS5hHizG.jpg",
+      "overview": "The Doctor is a Time Lord: a 900 year old alien with 2 hearts, part of a gifted civilization who mastered time travel. The Doctor saves planets for a living—more of a hobby actually, and the Doctor's very, very good at it.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 72.188
+    },
+    {
+      "original_name": "Bravest Warriors",
+      "id": 60877,
+      "name": "Bravest Warriors",
+      "vote_count": 11,
+      "vote_average": 7.7,
+      "first_air_date": "2012-11-08",
+      "poster_path": "/2Fjkjr3m6cLB8PKtZOooE3D9Dg8.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": null,
+      "overview": "In the year 3085, Chris, Beth, Wallow and Danny,  four teenage heroes-for-hire, warp through the universe to save adorable aliens and their worlds using the power of their emotions.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 4.256
+    },
+    {
+      "original_name": "Star Trek: Enterprise",
+      "id": 314,
+      "name": "Star Trek: Enterprise",
+      "vote_count": 336,
+      "vote_average": 7.5,
+      "first_air_date": "2001-09-26",
+      "poster_path": "/3msta8aYp2309onnFkVXeohbN4w.jpg",
+      "genre_ids": [
+        18,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/ibjUCp1dFK7kmMUcXrb1vW8PfHc.jpg",
+      "overview": "During the mid-22nd century, a century before Captain Kirk's five-year mission, Jonathan Archer captains the United Earth ship Enterprise during the early years of Starfleet, leading up to the Earth-Romulan War and the formation of the Federation.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 19.218
+    },
+    {
+      "original_name": "11.22.63",
+      "id": 64464,
+      "name": "11.22.63",
+      "vote_count": 672,
+      "vote_average": 7.8,
+      "first_air_date": "2016-02-15",
+      "poster_path": "/N0BjnG960GEIFgMx40BjpwyUAc.jpg",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/pKfCNEJPfIHvNVQWVk4wLqATGmC.jpg",
+      "overview": "An English teacher travels back in time to prevent the Kennedy assassination, but discovers he is attached to the life he has made in a bygone era.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 13.507
+    },
+    {
+      "original_name": "Andromeda",
+      "id": 2985,
+      "name": "Andromeda",
+      "vote_count": 113,
+      "vote_average": 7.1,
+      "first_air_date": "2000-10-02",
+      "poster_path": "/b21FVG7BYKWdA48J4wNty0s1xtV.jpg",
+      "genre_ids": [
+        18,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/rY4HsR1MLlddyrotCDskeC4ROXb.jpg",
+      "overview": "Andromeda is a Canadian/American science fiction television series, based on unused material by the late Star Trek creator Gene Roddenberry, developed by Robert Hewitt Wolfe, and produced by Roddenberry's widow, Majel Barrett. It starred Kevin Sorbo as High Guard Captain Dylan Hunt. The series premiered on October 2, 2000 and ended on May 13, 2005.\n\nAndromeda was filmed in Vancouver, British Columbia, Canada, and produced by Tribune Entertainment and Fireworks Entertainment. It was distributed by Global TV in Canada and syndicated in the United States on WGN and other channels. It was picked up by the Sci-Fi Channel in the U.S. halfway through season four. Andromeda is one of two TV series based upon concepts Roddenberry had created as early as the 1960s and 1970s. The name Dylan Hunt had also been used for the hero of two TV movie pilots Roddenberry had produced in the mid-1970s, Genesis II and Planet Earth, which had a similar premise. The other series posthumously created from Roddenberry's notes is Earth: Final Conflict.",
+      "origin_country": [
+        "CA",
+        "US"
+      ],
+      "popularity": 14.699
+    },
+    {
+      "original_name": "Star Trek: The Next Generation",
+      "id": 655,
+      "name": "Star Trek: The Next Generation",
+      "vote_count": 666,
+      "vote_average": 8.2,
+      "first_air_date": "1987-09-28",
+      "poster_path": "/8ZfPKg1xTahEigpDA53bRmmLdvs.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/8do6gZErem4wfdPwALiT8agtJfb.jpg",
+      "overview": "Follow the intergalactic adventures of Capt. Jean-Luc Picard and his loyal crew aboard the all-new USS Enterprise NCC-1701D, as they explore new worlds.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 34.822
+    },
+    {
+      "original_name": "Star Trek",
+      "id": 253,
+      "name": "Star Trek",
+      "vote_count": 559,
+      "vote_average": 8.0,
+      "first_air_date": "1966-09-08",
+      "poster_path": "/f2wbC7fxiOJqzTb6HPr4N6bsjLF.jpg",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/d0JLR2ostmBfHecj2omBCjspVW2.jpg",
+      "overview": "Space. The Final Frontier. The U.S.S. Enterprise embarks on a five year mission to explore the galaxy. The Enterprise is under the command of Captain James T. Kirk with First Officer Mr. Spock, from the planet Vulcan. With a determined crew, the Enterprise encounters Klingons, Romulans, time paradoxes, tribbles and genetic supermen lead by Khan Noonian Singh. Their mission is to explore strange new worlds, to seek new life and new civilizations, and to boldly go where no man has gone before.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 36.413
+    },
+    {
+      "original_name": "Rick and Morty",
+      "id": 60625,
+      "name": "Rick and Morty",
+      "vote_count": 1748,
+      "vote_average": 8.6,
+      "first_air_date": "2013-12-02",
+      "poster_path": "/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/mzzHr6g1yvZ05Mc7hNj3tUdy2bM.jpg",
+      "overview": "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 100.545
+    },
+    {
+      "original_name": "Torchwood",
+      "id": 424,
+      "name": "Torchwood",
+      "vote_count": 233,
+      "vote_average": 7.3,
+      "first_air_date": "2006-10-22",
+      "poster_path": "/zjXkhWgBvi59Fa0KkpZhKDARApG.jpg",
+      "genre_ids": [
+        18,
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/hgNTK4kkQ6DIUT1pgPOhc40GgG5.jpg",
+      "overview": "The exploits a team of people whose job is to investigate the unusual, the strange and the extraterrestrial.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 17.299
+    },
+    {
+      "backdrop_path": "/sylXF33UYlBUGRDwsMaAlHuav7I.jpg",
+      "first_air_date": "1999-03-19",
+      "genre_ids": [
+        10759,
+        10765
+      ],
+      "id": 4271,
+      "name": "Farscape",
+      "origin_country": [
+        "AU",
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Farscape",
+      "overview": "A freak accident during an experimental space mission catapults Astronaut John Crichton across a thousand galaxies to an alien battlefield.",
+      "poster_path": "/bTgQNOeGrEDpB8iaBETvvFdJezS.jpg",
+      "vote_average": 7.8,
+      "vote_count": 250,
+      "popularity": 13.769
+    },
+    {
+      "backdrop_path": "/yUDJ1r0UQdhb904povev5apjTVh.jpg",
+      "first_air_date": "2016-10-17",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 67683,
+      "name": "Travelers",
+      "origin_country": [
+        "CA"
+      ],
+      "original_language": "en",
+      "original_name": "Travelers",
+      "overview": "Hundreds of years from now, the last surviving humans discover the means of sending consciousness back through time, directly into people in the 21st century. These \"travelers\" assume the lives of seemingly random people, while secretly working as teams to perform missions in order to save humanity from a terrible future.",
+      "poster_path": "/aUVeyeyTrQrSFuUkqLCT8FtV7pp.jpg",
+      "vote_average": 7.5,
+      "vote_count": 260,
+      "popularity": 13.526
+    },
+    {
+      "backdrop_path": "/r91cDHXENXwjG0eoGka0A4TtGjf.jpg",
+      "first_air_date": "1999-03-28",
+      "genre_ids": [
+        16,
+        35
+      ],
+      "id": 615,
+      "name": "Futurama",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Futurama",
+      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "poster_path": "/iN0LOeE2JnJpIy4jF7imUjO6jwn.jpg",
+      "vote_average": 8.2,
+      "vote_count": 1018,
+      "popularity": 30.494
+    },
+    {
+      "original_name": "El ministerio del tiempo",
+      "id": 62099,
+      "name": "The Ministry of Time",
+      "vote_count": 36,
+      "vote_average": 7.2,
+      "first_air_date": "2015-02-24",
+      "poster_path": "/5tGCRUSlBowLqctgA9s46wC0BCZ.jpg",
+      "genre_ids": [
+        18,
+        10759
+      ],
+      "original_language": "es",
+      "backdrop_path": "/aniuuVMljF699KDTXys0BQcW2Ly.jpg",
+      "overview": "A soldier from the 15th century, a university student from the 19th century and a nurse from the present join the secret 'Department of Time', a secret department within the Spanish government with the ability to travel through time. Their mission is prevent changes in history.",
+      "origin_country": [
+        "ES"
+      ],
+      "popularity": 3.952
+    },
+    {
+      "backdrop_path": "/iQd8vbCrdnb6i9Dm9eHOvXyeXBY.jpg",
+      "first_air_date": "2001-11-17",
+      "genre_ids": [
+        10759,
+        16,
+        10765
+      ],
+      "id": 1618,
+      "name": "Justice League",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Justice League",
+      "overview": "The long-awaited rebirth of the greatest superhero team of all time: Batman, Superman, The Flash, Wonder Woman, Hawkgirl, Green Lantern and Martian Manhunter.",
+      "poster_path": "/1JszDEGLI6s5HjoGhe3VnfX2ez8.jpg",
+      "vote_average": 8.1,
+      "vote_count": 187,
+      "popularity": 5.809
+    },
+    {
+      "backdrop_path": "/rMnw8NPINMqAh5c9pDejAplUmdI.jpg",
+      "first_air_date": "1999-10-06",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 4624,
+      "name": "Roswell",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Roswell",
+      "overview": "Bizarre things start happening in the little New Mexico town where UFOs were spotted in 1947. Cut to 1999, when a cute high-school student saves the life of a teenage waitress. Surrounded by cliques of clever, angst-filled classmates, the two form a bond that threatens the survival of a secret universe involving superhuman powers, a yen for hot sauce and an alien gene pool.",
+      "poster_path": "/svcrK8cIjEVc5xfT8XxWkwqCY6L.jpg",
+      "vote_average": 7.4,
+      "vote_count": 132,
+      "popularity": 10.019
+    },
+    {
+      "original_name": "うる星やつら",
+      "id": 34163,
+      "name": "Urusei Yatsura",
+      "vote_count": 5,
+      "vote_average": 6.8,
+      "first_air_date": "1981-10-14",
+      "poster_path": "/n8jrIn1inNj50fivueYfG6Gjsto.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10765
+      ],
+      "original_language": "ja",
+      "backdrop_path": "/36JdAkLh5LGaPbNnZg8ZOesxBBY.jpg",
+      "overview": "An alien race known as the Oni arrive on Earth to invade the planet. Instead of taking over the planet by force, the Oni give humans a chance to fight for the rights to the planet by taking part in a competition. The computer-selected human player is Ataru Moroboshi, a lecherous, unlucky and stupid high school student from the Japanese city of Tomobiki, and the Oni player is Princess Lum, daughter of the leader of the Invasion force.",
+      "origin_country": [
+        "JP"
+      ],
+      "popularity": 4.929
+    },
+    {
+      "backdrop_path": "/6oVBODwFvbDJczBFlf4J930jKZg.jpg",
+      "first_air_date": "1979-04-02",
+      "genre_ids": [
+        10759,
+        16,
+        35,
+        10765
+      ],
+      "id": 57911,
+      "name": "Doraemon",
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "original_name": "ドラえもん",
+      "overview": "Doraemon is an anime TV series created by Fujiko F. Fujio and based on the manga series of the same name. This anime is the much more successful successor of the 1973 anime.",
+      "poster_path": "/4YmYgCHm1EiQwmgrFMeuxpGttfv.jpg",
+      "vote_average": 6.8,
+      "vote_count": 18,
+      "popularity": 20.613
+    },
+    {
+      "original_name": "The Invaders",
+      "id": 13881,
+      "name": "The Invaders",
+      "vote_count": 22,
+      "vote_average": 7.3,
+      "first_air_date": "1967-01-10",
+      "poster_path": "/70iC5ma4zYnMpvJvg2u4rvPtUI9.jpg",
+      "genre_ids": [
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/nLz4F3wQUek6SRPOH0fhtsevqzS.jpg",
+      "overview": "The Invaders, alien beings from a dying planet. Their destination: the Earth. Their purpose: to make it their world. David Vincent has seen them, for him it began one lost night on a lonely country road, looking for a shortcut that he never found. It began with a closed deserted diner, and a man too long without sleep to continue his journey. It began with the landing of a craft from another galaxy. Now, David Vincent knows that the Invaders are here, that they have taken human form. Somehow he must convince a disbelieving world that the nightmare has already begun.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 4.404
+    },
+    {
+      "original_name": "Falling Skies",
+      "id": 34967,
+      "name": "Falling Skies",
+      "vote_count": 420,
+      "vote_average": 6.6,
+      "first_air_date": "2011-06-19",
+      "poster_path": "/jSLaCj7Zk1UlJJ342omWOUOfqHY.jpg",
+      "genre_ids": [
+        10759,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/j07ELKEUif2z9LF4S3aepq699Cg.jpg",
+      "overview": "Falling Skies opens in the chaotic aftermath of an alien attack that has left most of the world completely incapacitated. In the six months since the initial invasion, the few survivors have banded together outside major cities to begin the difficult task of fighting back. Each day is a test of survival as citizen soldiers work to protect the people in their care while also engaging in an insurgency campaign against the occupying alien force.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 14.61
+    },
+    {
+      "backdrop_path": "/dnePq1kDs0On398Oc7sVUCZgtft.jpg",
+      "first_air_date": "1988-11-24",
+      "genre_ids": [
+        35,
+        10765
+      ],
+      "id": 1952,
+      "name": "Mystery Science Theater 3000",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Mystery Science Theater 3000",
+      "overview": "A stranded spaceship pilot captured by mad scientists survives a blitz of cheesy B movies by riffing on them with his funny robot pals.",
+      "poster_path": "/jPfidt1FuZeaO6CxkmMAN7UyCge.jpg",
+      "vote_average": 7.9,
+      "vote_count": 107,
+      "popularity": 16.177
+    }
+  ],
+  "total_pages": 19,
+  "total_results": 374
+}

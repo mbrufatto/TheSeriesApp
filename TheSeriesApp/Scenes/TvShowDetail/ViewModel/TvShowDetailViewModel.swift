@@ -29,14 +29,26 @@ class TvShowDetailViewModel {
         NetworkManager().load(resource: genreAndCreatorsResource) { result in
             if let genreAndCreatorsData = result {
                 genreAndCreatorsData.seasonNumber.bind { self.seasonNumber = $0 }
-                self.genres.append(contentsOf: genreAndCreatorsData.genres)
-                self.creators.append(contentsOf: genreAndCreatorsData.creators)
+                self.addGenres(genreAndCreatorsData.genres)
+                self.addCreators(genreAndCreatorsData.creators)
                 self.genresString = self.transformGenresInString()
                 completion(genreAndCreatorsData.genres)
             } else {
                 completion([Genre]())
             }
         }
+    }
+    
+    func addGenres(_ genres: [Genre]) {
+        self.genres.append(contentsOf: genres)
+    }
+    
+    func addCreators(_ creators: [Creator]) {
+        self.creators.append(contentsOf: creators)
+    }
+    
+    func addSimilarTvShow(_ similarTvShow: [SimilarTvShow]) {
+        self.similarTvShow.append(contentsOf: similarTvShow)
     }
     
     func loadSimilarTvShow(page: Int, tvShowId: Int, completion: @escaping([SimilarTvShow]) -> ()) {
@@ -49,7 +61,7 @@ class TvShowDetailViewModel {
         
         NetworkManager().load(resource: similarTvShowResource) { result in
             if let similarTvShowData = result {
-                self.similarTvShow.append(contentsOf: similarTvShowData.results)
+                self.addSimilarTvShow(similarTvShowData.results)
                 similarTvShowData.totalPages.bind { self.totalPagesSimilarTvShow = $0 }
                 completion(self.similarTvShow)
             } else {
@@ -58,7 +70,7 @@ class TvShowDetailViewModel {
         }
     }
     
-    private func transformGenresInString() -> String {
+    func transformGenresInString() -> String {
         var genresString: String = ""
         
         for genre in genres {
