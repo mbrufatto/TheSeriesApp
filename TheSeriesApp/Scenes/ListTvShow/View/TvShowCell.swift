@@ -28,7 +28,7 @@ class TvShowCell: UITableViewCell {
         tvShow.overview.bind { self.overview.text = $0 }
         tvShow.voteAverage.bind { self.voteAverage.text = String($0) }
         
-        tvShow.firstAirDate.bind { self.firstAirDate.text =  self.tvShowViewModel.getFormattedDate(date: $0) }
+        tvShow.firstAirDate.bind { self.firstAirDate.text = $0.getYearOfDate() }
     }
     
     private func configurePoster(_ posterPath: String) {
@@ -39,7 +39,11 @@ class TvShowCell: UITableViewCell {
         
         backgroundVoteAverage.layer.cornerRadius = 10
         
-        let url = URL(string: APIConfig.baseImageUrl + posterPath)
-        self.poster.kf.setImage(with: url)
+        if !posterPath.isEmpty {
+            let url = URL(string: APIConfig.baseImageUrl + posterPath)
+            self.poster.kf.setImage(with: url)
+        } else {
+            self.poster.image = UIImage(named: "Shows")
+        }
     }
 }

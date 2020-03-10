@@ -46,17 +46,17 @@ struct TvShow: Decodable {
 struct TvShowBase: Decodable {
     
     let results: [TvShow]
-    let total_pages: Dynamic<Int>
+    let totalPages: Dynamic<Int>
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         results = try container.decode([TvShow].self, forKey: .results)
-        total_pages = Dynamic(try container.decode(Int.self, forKey: .total_pages))
+        totalPages = Dynamic(try container.decode(Int.self, forKey: .totalPages))
     }
     
     private enum CodingKeys: String, CodingKey {
         case results
-        case total_pages
+        case totalPages = "total_pages"
     }
 }
 

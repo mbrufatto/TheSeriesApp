@@ -48,19 +48,19 @@ struct GenresAndCreatorsBase: Decodable {
     
     let genres: [Genre]
     let creators: [Creator]
-//    let seasonNumber: Dynamic<Int>
+    let seasonNumber: Dynamic<Int>
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         genres = try container.decode([Genre].self, forKey: .genres)
         creators = try container.decode([Creator].self, forKey: .creators)
-//        seasonNumber = Dynamic(try container.decode(Int.self, forKey: .seasonNumber))
+        seasonNumber = Dynamic(try container.decode(Int.self, forKey: .seasonNumber))
     }
     
     private enum CodingKeys: String, CodingKey {
         case genres
         case creators = "created_by"
-//        case seasonNumber = "season_number"
+        case seasonNumber = "number_of_seasons"
     }
     
 }
