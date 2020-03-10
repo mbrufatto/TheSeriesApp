@@ -21,7 +21,10 @@ final class NetworkManager {
         var tvShowsUrl = URLComponents(string: resource.url)!
         var request = URLRequest(url: tvShowsUrl.url!)
         tvShowsUrl.queryItems?.append(URLQueryItem(name: "api_key", value: "\(APIConfig.apiKey)"))
-        tvShowsUrl.queryItems?.append(URLQueryItem(name: "page", value: "\(resource.page)"))
+        
+        if resource.page > 0 {
+            tvShowsUrl.queryItems?.append(URLQueryItem(name: "page", value: "\(resource.page)"))
+        }
         
         let finalURL = tvShowsUrl.url
         request = URLRequest(url: finalURL!)

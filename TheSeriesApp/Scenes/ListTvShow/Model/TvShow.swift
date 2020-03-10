@@ -8,31 +8,6 @@
 
 import Foundation
 
-class Dynamic<T>: Decodable where T: Decodable {
-    
-    typealias Listener = (T) -> ()
-    var listener: Listener?
-    
-    var value: T {
-        didSet {
-            listener?(value)
-        }
-    }
-    
-    init(_ value: T) {
-        self.value = value
-    }
-    
-    func bind(listener: @escaping Listener) {
-        self.listener = listener
-        self.listener?(self.value)
-    }
-    
-    private enum CodingKeys: CodingKey {
-        case value
-    }
-}
-
 struct TvShow: Decodable {
     
     let id: Dynamic<Int>
@@ -41,8 +16,8 @@ struct TvShow: Decodable {
     let posterPath: Dynamic<String>
     let voteAverage: Dynamic<Double>
     let firstAirDate: Dynamic<String>
-    let genreIds: Dynamic<[Int]>
     let originalName: Dynamic<String>
+    let backdropPath: Dynamic<String>
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -52,8 +27,8 @@ struct TvShow: Decodable {
         posterPath = Dynamic(try container.decode(String.self, forKey: .posterPath))
         voteAverage = Dynamic(try container.decode(Double.self, forKey: .voteAverage))
         firstAirDate = Dynamic(try container.decode(String.self, forKey: .firstAirDate))
-        genreIds = Dynamic(try container.decode([Int].self, forKey: .genreIds))
         originalName = Dynamic(try container.decode(String.self, forKey: .originalName))
+        backdropPath = Dynamic(try container.decode(String.self, forKey: .backdropPath))
     }
     
     private enum CodingKeys: String, CodingKey {
@@ -63,25 +38,25 @@ struct TvShow: Decodable {
         case posterPath = "poster_path"
         case voteAverage = "vote_average"
         case firstAirDate = "first_air_date"
-        case genreIds = "genre_ids"
         case originalName = "original_name"
+        case backdropPath = "backdrop_path"
     }
 }
 
 struct TvShowBase: Decodable {
     
     let results: [TvShow]
-    let total_pages: Dynamic<Int>
+    let totalPages: Dynamic<Int>
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         results = try container.decode([TvShow].self, forKey: .results)
-        total_pages = Dynamic(try container.decode(Int.self, forKey: .total_pages))
+        totalPages = Dynamic(try container.decode(Int.self, forKey: .totalPages))
     }
     
     private enum CodingKeys: String, CodingKey {
         case results
-        case total_pages
+        case totalPages = "total_pages"
     }
 }
 

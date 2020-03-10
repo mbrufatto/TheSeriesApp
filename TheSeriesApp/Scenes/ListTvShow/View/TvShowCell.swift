@@ -17,6 +17,8 @@ class TvShowCell: UITableViewCell {
     @IBOutlet weak var voteAverage: UILabel!
     @IBOutlet weak var firstAirDate: UILabel!
     
+    @IBOutlet weak var backgroundVoteAverage: UIView!
+    
     fileprivate var tvShowViewModel = TvShowViewModel()
     
     func configureCell(_ tvShow: TvShow) {
@@ -26,7 +28,7 @@ class TvShowCell: UITableViewCell {
         tvShow.overview.bind { self.overview.text = $0 }
         tvShow.voteAverage.bind { self.voteAverage.text = String($0) }
         
-        tvShow.firstAirDate.bind { self.firstAirDate.text =  self.tvShowViewModel.getFormattedDate(date: $0) }
+        tvShow.firstAirDate.bind { self.firstAirDate.text = $0.getYearOfDate() }
     }
     
     private func configurePoster(_ posterPath: String) {
@@ -35,7 +37,13 @@ class TvShowCell: UITableViewCell {
         poster.layer.borderColor = UIColor.white.cgColor
         poster.layer.cornerRadius = 5
         
-        let url = URL(string: APIConfig.baseImageUrl + posterPath)
-        self.poster.kf.setImage(with: url)
+        backgroundVoteAverage.layer.cornerRadius = 10
+        
+        if !posterPath.isEmpty {
+            let url = URL(string: APIConfig.baseImageUrl + posterPath)
+            self.poster.kf.setImage(with: url)
+        } else {
+            self.poster.image = UIImage(named: "Shows")
+        }
     }
 }

@@ -43,21 +43,21 @@ class ListTvShowViewController: UIViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "tvShowDetailSegue" {
-//            prepareSegueForTvShowDetailViewController(segue: segue)
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tvShowDetailSegue" {
+            prepareSegueForTvShowDetailViewController(segue: segue)
+        }
+    }
     
-//    private func prepareSegueForTvShowDetailViewController(segue: UIStoryboardSegue) {
-//        guard let tvShowDetailViewController = segue.destination as? HeroDetailViewController, let indexPath =
-//            self.collectionView.indexPathsForSelectedItems?.first else {
-//            return
-//        }
-//
-//        let hero = self.heroViewModel.heroAt(indexPath.row)
-//        heroDetailViewController.hero = hero
-//    }
+    private func prepareSegueForTvShowDetailViewController(segue: UIStoryboardSegue) {
+        guard let tvShowDetailViewController = segue.destination as? TvShowDetailViewController, let indexPath =
+            self.tableView.indexPathForSelectedRow else {
+                return
+        }
+
+        let tvshow = self.tvShowViewModel.tvShowAt(indexPath.row)
+        tvShowDetailViewController.tvShow = tvshow
+    }
 }
 
 extension ListTvShowViewController: UITableViewDataSource {

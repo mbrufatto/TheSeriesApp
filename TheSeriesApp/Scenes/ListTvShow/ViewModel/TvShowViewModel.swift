@@ -24,7 +24,7 @@ class TvShowViewModel {
     }
     
     func loadTvShows(page: Int, completion: @escaping([TvShow]) -> ()) {
-        let tvShowUrl = APIConfig.baseUrl + "?api_key=\(APIConfig.apiKey)&language=en-US&page=\(page)"
+        let tvShowUrl = APIConfig.baseUrl + "/popular?api_key=\(APIConfig.apiKey)&language=en-US&page=\(page)"
         let tvShowResource = Resource<TvShowBase>(url: tvShowUrl, page: page) { data in
             let tvShowData = try? JSONDecoder().decode(TvShowBase.self, from: data)
             return tvShowData
@@ -33,7 +33,7 @@ class TvShowViewModel {
         NetworkManager().load(resource: tvShowResource) { result in
             if let tvShowData = result {
                 self.updateTvShow(tvShows: tvShowData.results)
-                tvShowData.total_pages.bind { self.totalPages = $0 }
+                tvShowData.totalPages.bind { self.totalPages = $0 }
                 completion(self.tvShows)
             } else {
                 completion([TvShow]())
@@ -47,17 +47,5 @@ class TvShowViewModel {
                 self.tvShows.append(tvShow)
             }
         }
-    }
-    
-    func getFormattedDate(date: String) -> String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd" // This formate is input formated .
-    
-        let formateDate = dateFormatter.date(from:date)
-        dateFormatter.dateFormat = "yyyy" // Output Formated
-        guard let dateFormatted = formateDate else {
-            return ""
-        }
-        return dateFormatter.string(from: dateFormatted)
     }
 }
