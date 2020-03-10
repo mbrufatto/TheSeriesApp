@@ -23,4 +23,6 @@ Ao abrir o app, demorará alguns segundos para que as séries apareceram. Após 
 Neste projeto foram criados alguns testes. Para executar os testes, basta abrir o projeto no Xcode e pressionar as teclas Command + U.
 
 ## Melhorias
-Adicionar um load nas telas de carregamento de dados; Adicionar icone ao projeto; Adicionar uma tela de splash; 
+ - Adicionar um load nas telas de carregamento de dados; 
+ - Adicionar icone ao projeto; 
+ - Adicionar uma tela de splash; 
